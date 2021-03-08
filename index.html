@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -16,10 +17,17 @@
   <script src="source.js"></script>
   <form action="" method="post">
     <label for="username">Username</label>
-    <input type="text" id="username" placeholder="username">
+    <input type="text" id="username" placeholder="username" onblur="clearMessage()">
     <label for="password">Password</label>
     <input type="text" id="password" placeholder="password">
     <input type="button" value="Login" onclick="loginMessage()">
   </form>
+  <div class="successMessage" hidden="true">
+    <h2>You logged in!!!</h2>
+  </div>
+  <div class="failureMessage" hidden="true">
+    <h2> Incorrect credentials!!!</h2>
+  </div>
 </body>
+
 </html>
