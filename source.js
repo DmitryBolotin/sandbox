@@ -1,0 +1,3 @@
+function loginMessage() {
+    alert("aloha");
+}
